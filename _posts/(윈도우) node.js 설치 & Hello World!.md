@@ -1,0 +1,47 @@
+---
+layout: post
+title: (윈도우) Node.js 설치 & Hello World!
+categories: [Node.js]
+comments: true
+---
+
+(해당 메모는 윈도우 환경을 기준으로 하고 있다.)
+
+서버 다운로드 링크 : https://nodejs.org/ko/download/
+
+설치를 마치면 환경 변수 등의 설정이 모두 완료되기 때문에, 따로 설정을 할 필요는 없다.
+
+
+Add to Path 메뉴가 설치 시에 따로 있다.
+
+강의 1. https://velopert.com/node-js-tutorials [VELOPERT.LOG 강의]
+강의 2. https://www.w3schools.com/nodejs/default.asp [w3schools 강의]
+
+--------------------
+
+myfirst.js
+
+Node.js를 사용한 첫 Application을 만들어보도록 하자.
+
+순서 1. 필요한 모듈 import 하기
+
+{% highlight javascript %}
+var http = require('http');
+{% endhighlight %}
+
+어플리케이션에서 필요한 모듈을 불러올 땐 `require` 명령을 사용한다.
+
+
+순서 2. 웹 서버 생성하기
+
+{% highligh javascript %}
+http.createServer(function (req, res) {
+res.writeHead(200, {'Content-Type': 'text/html'}); // 헤더 작성
+res.end('Hello World!'); // 바디 작성
+}).listen(8080); // 포트 설정
+{% endhighligh %}
+
+순서 3. 서버 열기
+> node myfirst.js
+
+윈도우 환경에서는 Node.js를 설치하면 동시에 환경변수에도 등록되기 때문에, `node` 커맨드를 사용할 수 있다. cmd 창에서 해당 위에서 작성한 myfirst.js가 저장된 디렉토리로 이동한 다음, 위의 명령어를 실행하면 서버가 가동 된다.
