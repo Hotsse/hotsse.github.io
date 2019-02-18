@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Java HttpClient 개발
-categories: [Java]
+title: Java Spring HttpClient 개발
+categories: [Spring]
 comments: true
 ---
 
 Third Party API 를 사용하기 위해서는 때론 Server to Server 통신을 해야할 때도 있다.
 (Client to Server 통신은 보안 상의 이유로 많은 제약이 있기 때문에...)
 
-httpClient 는 Java 에서 기본적으로 제공하는 패키지로 Request 정보를 원하는 URI 에 송신하고, 통신이 성공했을 시 Response 를 응답받으며, 이를 파싱하여 통신을 완료할 수 있다.
+httpClient 는 Spring(Java) 에서 기본적으로 제공하는 패키지로 Request 정보를 원하는 URI 에 송신하고, 통신이 성공했을 시 Response 를 응답받으며, 이를 파싱하여 통신을 완료할 수 있다.
 
 ------------
 
