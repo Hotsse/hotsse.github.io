@@ -34,14 +34,16 @@ var http = require('http');
 
 순서 2. 웹 서버 생성하기
 
-{% highligh javascript %}
+{% highlight javascript %}
 http.createServer(function (req, res) {
 res.writeHead(200, {'Content-Type': 'text/html'}); // 헤더 작성
 res.end('Hello World!'); // 바디 작성
 }).listen(8080); // 포트 설정
-{% endhighligh %}
+{% endhighlight %}
 
 순서 3. 서버 열기
+{% highlight bash %}
 > node myfirst.js
+{% endhighlight %}
 
 윈도우 환경에서는 Node.js를 설치하면 동시에 환경변수에도 등록되기 때문에, `node` 커맨드를 사용할 수 있다. cmd 창에서 해당 위에서 작성한 myfirst.js가 저장된 디렉토리로 이동한 다음, 위의 명령어를 실행하면 서버가 가동 된다.
