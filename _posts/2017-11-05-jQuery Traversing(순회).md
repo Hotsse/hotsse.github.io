@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery Get, Set, Add, Remove
+title: jQuery Traversing(순회)
 categories: [jQuery]
 comments: true
 ---
