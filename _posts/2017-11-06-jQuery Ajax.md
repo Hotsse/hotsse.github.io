@@ -13,7 +13,7 @@ AJAX : Asynchronous JavaScript and XML(비동기 JavaScript와 XML)
 
 load 메소드
 
-load() : selector에 해당 주소에서 수신한 정보로 갱신함.
+load() : selector에 해당 주소에서 수신한 정보로 갱신함..
 
 {% highlight javascript %}
 $(document).ready(function(){
