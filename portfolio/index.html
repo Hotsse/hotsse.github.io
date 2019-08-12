@@ -14,84 +14,231 @@
     background: #aaa;
   }
 
+  .row {
+    margin-bottom:15px;
+  }
+
   .top {
     display: flex;
     justify-content: center;
     align-items: center;
     width:100%;
     height:100vh;
-    background-image:url('/img/top-background.jpg');
+    background-image:url('../img/top-background.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;    
+  }
+
+  .container_skill{
+      text-align: center;
+      display: inline-block;
+      width:114px;
+      height:116px;
+      border-radius: 30px 30px;
+      
+      background-size:cover;
+      background-repeat: no-repeat;
+      margin-right: 2rem;
+      
+      box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+  }
+
+  .label_skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+    border-radius: 30px 30px;
+    width: 100px;
+    height:100px;
+    padding:10px;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 1.0rem;
+    color: white;
+    visibility: hidden;
   }
   </style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>    
+        <a class="nav-link" href="#">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
     </ul>
   </div>  
 </nav>
 
-<div class="top">
-</div>
+<div class="top"></div>
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
-    </div>
-    <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+<div style="padding-top:30px;background-color:#ddd;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <h1>About Me</h1>
+      </div>
+      <div class="col-sm-8">
+        <h2>즐기는 개발자</h2>
+        <p>노력하는 사람은 즐기는 사람을 이길 수 없다고 했던가, 나 윤호세. 항상 즐겁게 개발해왔다.</p>
+        <p>
+          허나, 개발자를 업으로 삼고 있는 지금, 즐기기만 하는 가벼운 마인드로는 살아남을 수 없다.
+          지속적으로 공부하고 수련하여, 기본이 탄탄하며 트렌드에 뒤쳐지지 않는 개발자가 될 것이다.
+        </p>
+      </div>
     </div>
   </div>
+</div>
+
+<div>
+  <div class="container" style="margin-top:30px">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1>Skills</h1>
+      </div>
+    </div>
+    <!-- Language -->
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4>Language</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="container_skill" style="background-image:url('../img/logo_skill/java.png');">
+          <div class="label_skill">Intermediate</div>
+        </div>
+        <div class="container_skill" style="background-image:url('../img/logo_skill/javascript.png');">
+          <div class="label_skill">Intermediate</div>
+        </div>
+        <div class="container_skill" style="background-image:url('../img/logo_skill/csharp.png');">
+          <div class="label_skill">Intermediate</div>
+        </div>
+      </div>
+    </div>
+    <!-- // Language -->
+    <!-- Web Skill -->
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4>Web Skill</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="container_skill" style="background-image:url('../img/logo_skill/html.png');">
+          <div class="label_skill">Basic</div>
+        </div>
+        <div class="container_skill" style="background-image:url('../img/logo_skill/css.png');">
+          <div class="label_skill">Basic</div>
+        </div>
+        <div class="container_skill" style="background-image:url('../img/logo_skill/javascript.png');">
+          <div class="label_skill">Intermediate</div>
+        </div>
+        <div class="container_skill" style="background-image:url('../img/logo_skill/jquery.png');">
+          <div class="label_skill">Basic</div>
+        </div>
+      </div>
+    </div>
+    <!-- // Web Skill -->
+    <!-- Framework -->
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4>Framework</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="container_skill" style="background-image:url('../img/logo_skill/spring.png');">
+          <div class="label_skill">Intermediate</div>
+        </div>      
+        <div class="container_skill" style="background-image:url('../img/logo_skill/nodejs.png');">
+          <div class="label_skill">Basic</div>
+        </div>
+        <div class="container_skill" style="background-image:url('../img/logo_skill/aspnet_mvc.png');">
+          <div class="label_skill">Intermediate</div>
+        </div>
+      </div>
+    </div>
+    <!-- // Framework -->
+    <!-- Database -->
+    <div class="row">
+        <div class="col-sm-12 text-center">
+          <h4>Database</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div class="container_skill" style="background-image:url('../img/logo_skill/sqlserver.png');">
+            <div class="label_skill">Expert</div>
+          </div>
+          <div class="container_skill" style="background-image:url('../img/logo_skill/mysql.png');">
+            <div class="label_skill">Intermediate</div>
+          </div>
+        </div>        
+      </div>
+      <!-- // Database -->
+    <!-- Operating System -->
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4>Operating System</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="container_skill" style="background-image:url('../img/logo_skill/windows.png');">
+          <div class="label_skill">Basic</div>
+        </div>
+        <div class="container_skill" style="background-image:url('../img/logo_skill/linux.png');">
+          <div class="label_skill">Basic</div>
+        </div>
+      </div>
+    </div>
+    <!-- // Operating System -->
+    <!-- Etc -->
+    <div class="row">
+        <div class="col-sm-12 text-center">
+          <h4>Etc</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div class="container_skill" style="background-image:url('../img/logo_skill/github.png');">
+            <div class="label_skill">Basic</div>
+          </div>
+        </div>
+      </div>
+      <!-- // Etc -->
+  </div>      
+</div>
+
+
+<div style="background-color:#ddd;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1>Project</h1>
+      </div>
+    </div>
+  </div>  
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
