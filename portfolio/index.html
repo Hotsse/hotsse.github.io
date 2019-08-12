@@ -60,6 +60,50 @@
     color: white;
     visibility: hidden;
   }
+
+  .container_skill:hover .label_skill{
+    visibility:visible;
+    animation: fadeout1 0.5s;
+    -moz-animation: fadeout1 0.5s; /* Firefox */
+    -webkit-animation: fadeout1 0.5s; /* Safari and Chrome */
+    -o-animation:fadeout1 0.5s; /* Opera */
+
+}@keyframes fadeout1 {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity:0.8;
+    }
+}
+@-moz-keyframes fadeout1 { /* Firefox */
+    0%{
+        opacity: 0;
+    }
+ 
+    100% {
+        opacity:0.8;
+    }
+}
+@-webkit-keyframes fadeout1 { /* Safari and Chrome */
+    0%{
+        opacity: 0;
+    }
+   
+    100% {
+        opacity:0.8;
+    }
+}
+@-o-keyframes fadeout1 { /* Opera */
+    0%{
+        opacity: 0;
+    }
+  
+    100% {
+        opacity:0.8;
+    }
+}
   </style>
 </head>
 <body>
