@@ -5,11 +5,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <script type="text/javascript">
+
+        var openBlueLockingAwardPopup = function(){
+            window.open("bluelocking/popupAward.html", "", "width=1200,height=400");
+        }
 
         $(document).ready(function(){
 
@@ -573,7 +580,7 @@
                             <h2 class="name">개발기간 : 2016.06 ~ 2016.11</h2>
                             <p class="Box_content">
                                 APM + Android + BLE 기술을 활용한 지문인식 PC Safty-Lock App.<br/>
-                                수상 3건, 외부 사업체에 기술이전 체결
+                                <a href="javascript:openBlueLockingAwardPopup();">공모전 수상 3건</a>, 외부 사업체에 기술이전 체결
                             </p>
                             <ul class="Box_ul">
                                 <li class="Box_li">#APM</li>
