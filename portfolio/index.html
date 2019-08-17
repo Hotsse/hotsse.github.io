@@ -42,6 +42,19 @@
 		background: #aaa;
 	}
 
+    .navbar{
+        position:fixed;
+        padding-left:50px;
+        padding-right:50px;
+        border-radius: 30px 30px;
+        z-index:999;
+    }
+
+    .navbar-nav .nav-item{
+        padding-left:10px;
+        padding-right:10px;
+    } 
+
 	.row {
 		margin-bottom:15px;
 	}
@@ -231,7 +244,7 @@
 	<div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link e_scroll" href="#">Home</a>
+				<a class="nav-link e_scroll" href="#top">Home</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link e_scroll" href="#about">About</a>
@@ -249,7 +262,7 @@
 	</div>  
 </nav>
 
-<div class="top">
+<div id="top" class="top">
 	<h1 style="font-size:60px;">Developer 윤호세</h1>
 </div>
 
