@@ -48,7 +48,7 @@ public class Hello {
 {% highlight java %}
 @Autowired
 private Printer[] printers; // bean 중 Printer형을 가진 모든 객체를 주입
-{% endhighlight%}
+{% endhighlight %}
 
 - @Qualifier
 @Autowired 에 타입 말고도 추가적인 정보를 제공하여, 특정 bean을 검색할 수 있도록 하는 어노테이션이다.
@@ -59,7 +59,7 @@ private Printer[] printers; // bean 중 Printer형을 가진 모든 객체를 �
 public class Printer {
     //...
 }
-{% endhighlgiht %}
+{% endhighlight %}
 
 {% highlight java %}
 public class Hello {
