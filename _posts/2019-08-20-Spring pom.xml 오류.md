@@ -46,7 +46,7 @@ pom.xml 첫 줄 > unknown 에러
 빌드 시에 Maven 의존성의 합이 맞지 않아서 생기는 오류라고 한다. 빌드나 실행에 있어서 오류가 나지는 않지만 빨간 x자가 개발자의 마음을 심란하게 하니 아래의 수정 방법으로 에러를 해결하자.
 
 - Maven > Update Project
-프로젝트 우클릭 > Maven > Update Project 로 메이븐 업데이트.
+프로젝트 우클릭 > Maven > Update Project 로 메이븐 업데이트를 진행.
 
 - pom.xml 에서 Maven 버전 변경
 pom.xml
