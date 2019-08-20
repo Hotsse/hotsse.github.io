@@ -1,54 +1,54 @@
 ---
 layout: post
-title: Spring > pom.xml > ¿À·ù ÇØ°á
+title: Spring > pom.xml > ì˜¤ë¥˜ í•´ê²°
 categories: [Spring]
 comments: true
 ---
 
-°£È¤ »õ·Î¿î È¯°æ¿¡¼­ ÇÁ·ÎÁ§Æ®¸¦ Ã¼Å©¾Æ¿ô ¹ÞÀ» ¶§, ÀÌ·± Àú·± ÀÌÀ¯·Î pom.xml ¿¡¼­ ¿¡·¯°¡ ³ª°ï ÇÑ´Ù.
-±×¿¡ ´ëÇÑ ÇØ°á ¹æ¹ýÀ» ¾Ë¾Æº¸ÀÚ.
+ê°„í˜¹ ìƒˆë¡œìš´ í™˜ê²½ì—ì„œ í”„ë¡œì íŠ¸ë¥¼ ì²´í¬ì•„ì›ƒ ë°›ì„ ë•Œ, ì´ëŸ° ì €ëŸ° ì´ìœ ë¡œ pom.xml ì—ì„œ ì—ëŸ¬ê°€ ë‚˜ê³¤ í•œë‹¤.
+ê·¸ì— ëŒ€í•œ í•´ê²° ë°©ë²•ì„ ì•Œì•„ë³´ìž.
 
 ------------
 
-META-INF\MANIFEST.MF ¿À·ù
+META-INF\MANIFEST.MF ì˜¤ë¥˜
 
-¾Æ·¡¿Í °°Àº ¿¡·¯°¡ ³ª´Â °æ¿ì¿¡ ´ëÇÑ ÇØ°á ¹æ¹ýÀÌ´Ù.
+ì•„ëž˜ì™€ ê°™ì€ ì—ëŸ¬ê°€ ë‚˜ëŠ” ê²½ìš°ì— ëŒ€í•œ í•´ê²° ë°©ë²•ì´ë‹¤.
 
 {% highlight text %}
-... \target\m2e-wtp\web-resources\META-INF\MANIFEST.MF (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
+... \target\m2e-wtp\web-resources\META-INF\MANIFEST.MF (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
 {% endhighlight %}
 
 
-Project Preferences ¼³Á¤
+Project Preferences ì„¤ì •
 
 {% highlight text %}
 Window > Preferences > Maven > Java EE Integration > WAR Project preferences
 {% endhighlight %}
 
-»ó±â ¿É¼Ç¿¡¼­ ¾Æ·¡ Ç×¸ñ¿¡ ´ëÇÑ Ã¼Å©¸¦ ÇØÁ¦ÇÑ´Ù.
+ìƒê¸° ì˜µì…˜ì—ì„œ ì•„ëž˜ í•­ëª©ì— ëŒ€í•œ ì²´í¬ë¥¼ í•´ì œí•œë‹¤.
 
 {% highlight text %}
 'Maven Archiver generates files under the build directory'
 {% endhighlight %}
 
 
-target Å¬¸®¾î
+target í´ë¦¬ì–´
 
-Run As > Maven clean À» ÅëÇØ target Æú´õ¸¦ Å¬¸®¾îÇÑ´Ù.
+Run As > Maven clean ì„ í†µí•´ target í´ë”ë¥¼ í´ë¦¬ì–´í•œë‹¤.
 
-¿¡·¯ ¹®±¸°¡ »ç¶óÁø °ÍÀ» È®ÀÎ ÇÒ ¼ö ÀÖ´Ù.
+ì—ëŸ¬ ë¬¸êµ¬ê°€ ì‚¬ë¼ì§„ ê²ƒì„ í™•ì¸ í•  ìˆ˜ ìžˆë‹¤.
 
 ------------
 
-pom.xml Ã¹ ÁÙ > unknown ¿¡·¯
+pom.xml ì²« ì¤„ > unknown ì—ëŸ¬
 
-ÀÌÀ¯ ¾øÀÌ pom.xml Ã¹ ÁÙ¿¡ unknonw(Maven Configuration Problem) ¿À·ù°¡ ³ª´Â °æ¿ì°¡ ÀÖ´Ù.
-ºôµå ½Ã¿¡ Maven ÀÇÁ¸¼ºÀÇ ÇÕÀÌ ¸ÂÁö ¾Ê¾Æ¼­ »ý±â´Â ¿À·ù¶ó°í ÇÑ´Ù. ºôµå³ª ½ÇÇà¿¡ ÀÖ¾î¼­ ¿À·ù°¡ ³ªÁö´Â ¾ÊÁö¸¸ »¡°£ xÀÚ°¡ °³¹ßÀÚÀÇ ¸¶À½À» ½É¶õÇÏ°Ô ÇÏ´Ï ¾Æ·¡ÀÇ ¼öÁ¤ ¹æ¹ýÀ¸·Î ¿¡·¯¸¦ ÇØ°áÇÏÀÚ.
+ì´ìœ  ì—†ì´ pom.xml ì²« ì¤„ì— unknonw(Maven Configuration Problem) ì˜¤ë¥˜ê°€ ë‚˜ëŠ” ê²½ìš°ê°€ ìžˆë‹¤.
+ë¹Œë“œ ì‹œì— Maven ì˜ì¡´ì„±ì˜ í•©ì´ ë§žì§€ ì•Šì•„ì„œ ìƒê¸°ëŠ” ì˜¤ë¥˜ë¼ê³  í•œë‹¤. ë¹Œë“œë‚˜ ì‹¤í–‰ì— ìžˆì–´ì„œ ì˜¤ë¥˜ê°€ ë‚˜ì§€ëŠ” ì•Šì§€ë§Œ ë¹¨ê°„ xìžê°€ ê°œë°œìžì˜ ë§ˆìŒì„ ì‹¬ëž€í•˜ê²Œ í•˜ë‹ˆ ì•„ëž˜ì˜ ìˆ˜ì • ë°©ë²•ìœ¼ë¡œ ì—ëŸ¬ë¥¼ í•´ê²°í•˜ìž.
 
 - Maven > Update Project
-ÇÁ·ÎÁ§Æ® ¿ìÅ¬¸¯ > Maven > Update Project ·Î ¸ÞÀÌºì ¾÷µ¥ÀÌÆ®¸¦ ÁøÇà.
+í”„ë¡œì íŠ¸ ìš°í´ë¦­ > Maven > Update Project ë¡œ ë©”ì´ë¸ ì—…ë°ì´íŠ¸ë¥¼ ì§„í–‰.
 
-- pom.xml ¿¡¼­ Maven ¹öÀü º¯°æ
+- pom.xml ì—ì„œ Maven ë²„ì „ ë³€ê²½
 pom.xml
 {% highlight xml %}
 <properties>
@@ -57,6 +57,6 @@ pom.xml
 </properties>
 {% endhighlight %}
 
-ÀÌÈÄ ¹æ¹ý 1°ú °°ÀÌ ¸ÞÀÌºì ¾÷µ¥ÀÌÆ®¸¦ ÁøÇà.
+ì´í›„ ë°©ë²• 1ê³¼ ê°™ì´ ë©”ì´ë¸ ì—…ë°ì´íŠ¸ë¥¼ ì§„í–‰.
 
-ÀÌ·Î½á unknown ¿¡·¯¿¡ ´ëÇÑ ÇØ°áÀÌ °¡´ÉÇÏ´Ù.
+ì´ë¡œì¨ unknown ì—ëŸ¬ì— ëŒ€í•œ í•´ê²°ì´ ê°€ëŠ¥í•˜ë‹¤.
