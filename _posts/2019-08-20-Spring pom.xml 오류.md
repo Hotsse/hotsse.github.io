@@ -38,7 +38,7 @@ Run As > Maven clean 을 통해 target 폴더를 클리어한다.
 
 에러 문구가 사라진 것을 확인 할 수 있다.
 
-------------
+-------------
 
 pom.xml 첫 줄 > unknown 에러
 
