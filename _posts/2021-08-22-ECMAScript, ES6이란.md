@@ -23,6 +23,43 @@ ECMAScript는 자바 스크립트를 이루는 코어(Core) 스크립트 언어�
 
 -------------
 
+ES5 vs ES6
+
+ES5(ECMAScript5)는 ECMAScript 2009 라고도 불리며, 이름에서 유추할 수 있듯이 2009년에 표준 규격으로 개발되어 현재까지도 널리 사용되고 있는 스크립트 표준 규격이다.  
+하지만 어느 언어든지 오래 사용하다보면 해당 언어에 대한 단점이 부각되기 마련이다. 전 세계적으로 각광받는 자바스크립트 또한 예외는 아니다.  
+
+ES6(ECMAScript6)는 완전히 새로운 개념이 아니다. ES5와 같이 스크립트 표준 규격이며, ES5의 다음 버전이다. 단지 그 뿐이다.  
+다만 ES5 이후 6년 뒤에 발표된 표준 규격이라 사용자 편의성이나 당대의 트렌드를 고려한 신규 문법들이 추가되었다.
+
+아래는 그에 대한 예이다.
+
+{% highlight javascript %}
+// add function with ES5
+var add_es5 = function(a, b){
+    return a + b;
+}
+
+console.log(add_es5(2,3)); // output: 5
+
+// add function with ES6's Arrow Function
+var add_es6 = (a, b) => a + b;
+
+console.log(add_es6(2,3)); // output: 5
+{% endhighlight %}
+
+{% highlight javascript %}
+var name = "홍길동"
+var age = "20";
+
+// print string with ES5
+conesole.log("name : " + name + " / age : " + age); // output: "name: 홍길동 / age : 20"
+
+// print string with ES6's Template String
+console.log("name : ${name} / age : ${age}"); // output: "name: 홍길동 / age : 20"
+{% endhighlight %}
+
+-------------
+
 References
 
 https://takeuu.tistory.com/93?category=737612 [워너비스페셜]
