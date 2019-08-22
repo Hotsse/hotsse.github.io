@@ -15,7 +15,7 @@ comments: true
 
 키워드 없이 선언
 
-키워드 없이 선언된 변수에 대해서는 전역 변수로 선언 된다.
+키워드 없이 선언된 변수에 대해서는 **전역 변수로 선언** 된다.
 기존에 같은 이름을 가진 변수가 있을 경우 암묵적으로 덮어쓰게 된다.
 
 {% highlight javascript %}
@@ -37,7 +37,7 @@ console.log(var2); // output: "local"
 
 var 선언
 
-var 키워드로 선언된 변수는 지역 변수의 범주에 들어간다.
+var 키워드로 선언된 변수는 **지역 변수의 범주**에 들어간다.
 전역에 동일한 변수명이 있을 경우 무시하고 새로운 변수가 생성된다.
 
 {% highlight javascript %}
@@ -57,7 +57,7 @@ console.log(var1); // output: "global"
 
 let 선언
 
-let과 var의 차이는 let 은 Block-level Scope 이며, var 는 Function-level Scope 라는 점이다.
+let과 var의 차이는 **let 은 Block-level Scope** 이며, **var 는 Function-level Scope** 라는 점이다.
 let으로 선언된 변수는 해당 블록을 탈출하는 순간 소멸한다.
 
 {% highlight javascript %}
@@ -80,9 +80,9 @@ let 은 ECMAScript6 부터 지원하는 키워드이다.
 
 -------------
 
-const
+const 선언
 
-const는 let과 동일하나, 초기화 이후로는 값을 수정할 수 없는 "상수"를 지정할 때 쓰인다.
+const는 let과 동일하나, 초기화 이후로는 값을 수정할 수 없는 **"상수"**를 지정할 때 쓰인다.
 
 {% highlight javascript %}
 const MAX_VALUE = 100; // 명명규칙 > 상수 = 대문자
