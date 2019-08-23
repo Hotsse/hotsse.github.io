@@ -17,6 +17,7 @@ ES6의 **let**과 **const** 키워드는 Block-level scope를 지원한다.
 let 의 특징
 
 - Block-level scope
+
 {% highlight javascript %}
 let a = "global";
 let g = "global";
@@ -32,6 +33,7 @@ console.log(b); // error
 {% endhighlight %}
 
 - 변수 중복 선언 불가
+
 {% highlight javascript %}
 var a = 111;
 var a = 222;
@@ -44,6 +46,7 @@ var a = 222; // error
 {% endhighlight %}
 
 - 호이스팅 불가
+
 코드 내에 존재하는 변수가 선언되기 전에 호출된 경우, 해당 변수를 미리 메모리 할당해주는 기술을 호이스팅(hoisting) 이라고 한다. 메모리 할당만 해줄 뿐 코드대로 초기화까지는 진행하지 않기 때문에 호이스팅으로 선언된 변수는 undefined 값을 가지게 된다.
 
 호이스팅을 지원하지 않는 let 은 선언 전에 호출된 경우 error 를 내게 된다.
