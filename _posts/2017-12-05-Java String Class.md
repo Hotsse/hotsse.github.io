@@ -5,6 +5,7 @@ categories: [Java]
 comments: true
 ---
 
+
 String <-> char
 
 {% highlight java %}
