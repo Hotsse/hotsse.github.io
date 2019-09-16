@@ -83,7 +83,22 @@ public class SpringJUnitTest {
 }
 {% endhighlight %}
 
-Spring Boot 의 경우는 @RunWith 와 @SpringBootTest 어노테이션으로 구현 가능하다.
+Spring 4.x 부터는 어노테이션으로 설정된 Class 기반 Context 를 호출하는 것도 가능하다.
+(Spring Boot 1.3 까지는 이 방식을 사용한다)
+
+{% highlight java %}
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(ConextConfig.class)
+public class SpringJUnitTest {
+
+    @Test
+    public void test(){
+        //...
+    }
+}
+{% endhighlight %}
+
+Spring Boot 1.4 이상에서는 @RunWith 와 @SpringBootTest 어노테이션으로 구현 가능하다.
 
 {% highlight java %}
 @RunWith(SpringRunner.class)
