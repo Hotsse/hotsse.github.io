@@ -33,7 +33,7 @@ Spring 의 경우 junit 라이브러리를 pom.xml 를 통해 Dependency를 추�
 </dependency>
 {% endhighlight %}
 
-Spring Boot 의 경우는 spring-boot-starter-test 패키지에 JUnit 을 포함한 
+Spring Boot 의 경우는 spring-boot-starter-test 패키지에 JUnit을 포함한 다양한 라이브러리들이 포함되어 있어, 해당 패키지에 대한 Dependency 만 추가해 주면 된다.
 
 {% highlight xml %}
 <!-- Spring Boot > pom.xml -->
@@ -46,10 +46,20 @@ Spring Boot 의 경우는 spring-boot-starter-test 패키지에 JUnit 을 포함
 
 -------------
 
-프로젝트 패키지 구성
+단위 테스트 기본 구성
 
 Maven 프로젝트를 생성하게 되면 Maven 의 관례에 따라 ~/src/test/java 구조의 패키지가 생성된다. 개발자는 단위 테스트를 위해 앞서 언급한 패키지 내에 java 코드를 생성하고 구동하는 것으로 단위 테스트가 가능하다.
 
+@RunWith(SpringJUnit4ClassRunner.class) 
+@ContextConfiguration(locations={"file:WebContent/WEB-INF/classes/applicationContext*.xml"})
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
 
 -------------
+
+@Test
+
+-------------
+
+Assert
