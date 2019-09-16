@@ -52,9 +52,9 @@ public class Main {
     	ApplicationContext ctx = 
             new AnnotationConfigApplicationContext(ContextConfig.class);
 
-		TestService testService = ctx.getBean("testService");
+	TestService testService = ctx.getBean("testService");
 
-		testService.test();
+	testService.test();
 
         ctx.close();
     }

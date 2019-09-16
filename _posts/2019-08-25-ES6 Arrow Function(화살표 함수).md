@@ -60,7 +60,7 @@ function(x,y){
 
 {% highlight javascript %}
 var openPopup = (idx)
-    => window.open(`openPopup.do?idx=${idx}`, "", "");
+    => window.open(`openPopup.do?idx=${idx}`, "", ""); // Template String 사용
 {% endhighlight %}
 
 -------------
