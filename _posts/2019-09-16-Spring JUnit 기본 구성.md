@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring JUnit 
+title: Spring JUnit 기본 구성
 categories: [Spring]
 comments: true
 ---
@@ -44,22 +44,55 @@ Spring Boot 의 경우는 spring-boot-starter-test 패키지에 JUnit을 포함�
 </dependency>
 {% endhighlight %}
 
--------------
-
-단위 테스트 기본 구성
-
 Maven 프로젝트를 생성하게 되면 Maven 의 관례에 따라 ~/src/test/java 구조의 패키지가 생성된다. 개발자는 단위 테스트를 위해 앞서 언급한 패키지 내에 java 코드를 생성하고 구동하는 것으로 단위 테스트가 가능하다.
-
-@RunWith(SpringJUnit4ClassRunner.class) 
-@ContextConfiguration(locations={"file:WebContent/WEB-INF/classes/applicationContext*.xml"})
-
-@RunWith(SpringRunner.class)
-@SpringBootTest
 
 -------------
 
 @Test
 
+단위 테스트를 진행하기 위해선 테스트를 진행하고자 하는 메서드를 단위 테스트 메서드로 지정해야 한다. @Test 어노테이션은 특정 메서드 위에 선언하는 것으로 해당 메서드가 단위 테스트 메서드임을 선언한다.  
+@Test 로 선언된 단위 테스틑 메서드는 따로 호출되는 경로가 없어도 단위 테스트 실행 시, JUnit이 자동으로 실행시켜 준다.
+
+{% highlight java %}
+public class TestClass {
+
+    @Test
+    public void test(){
+
+        int a = 1, b = 2;
+        System.out.println("a + b = " + (a + b)); // output: "a + b = 3"
+    }
+}
+{% endhighlight %}
+
 -------------
 
-Assert
+Spring Framework 기반의 JUnit 테스트
+
+Spring 의 경우는 @RunWith 와 @ContextConfiguration 어노테이션으로 구현 가능하다.
+
+{% highlight java %}
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations={"file:WebContent/WEB-INF/classes/applicationContext*.xml"})
+public class SpringJUnitTest {
+
+    @Test
+    public void test(){
+        //...
+    }
+}
+{% endhighlight %}
+
+Spring Boot 의 경우는 @RunWith 와 @SpringBootTest 어노테이션으로 구현 가능하다.
+
+{% highlight java %}
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class BootJUnitTest {
+    
+    @Test
+    public void test(){
+        //...
+    }
+}
+{% endhighlight %}
