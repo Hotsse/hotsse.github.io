@@ -69,6 +69,10 @@ public class TestClass {
 
 Spring Framework 기반의 JUnit 테스트
 
+@RunWith
+- JUnit 의 테스트 실행방법을 확장할 때 사용
+- SpringJUnit4ClassRunner.class, SpringRunner.class 의 지정으로 테스트 중 Spring ApplicationContext 를 생성하고 관리하는 작업을 진행함
+
 Spring 의 경우는 @RunWith 와 @ContextConfiguration 어노테이션으로 구현 가능하다.
 
 {% highlight java %}
