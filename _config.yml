@@ -4,10 +4,10 @@
 ####################################
 #
 title: Hotsse
-email: dkdlrja@gmail.com
-description: A simple and awesome blog theme powered by jekyll.
+email: dkdlrja@naver.com
+description: 개발자 Hotsse의 개발 블로그
 url: https://hotsse.github.io
-keywords: ["blog", "jekyll"]
+keywords: ["Java", "Spring", "Spring Boot", "C#", ".NET", "Javascript", "Node.js"]
 
 #
 ###################################
@@ -59,7 +59,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: hotsse
+  github: Hotsse
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: hose-yun
