@@ -44,9 +44,9 @@ Spring 테스트가 가능하도록 Test Runner 를 수정했으니, 테스트 �
 
 
 
-- Spring (XML Context) : **@ContextConfiguration**
+Spring (XML Context) 의 경우 : **@ContextConfiguration**
 
-**@ContextConfiguration** 은 Spring의 전통적인 XML 방식 Context 설정에 대한 테스트 Context 구성 어노테이션이다. 어노테이션의 옵션인 locations 에 해당 Context의 경로를 지정하면, 테스트 실행 시 해당 정보를 통해 Context 를 로드한다.
+- **@ContextConfiguration** 은 Spring의 전통적인 XML 방식 Context 설정에 대한 테스트 Context 구성 어노테이션이다. 어노테이션의 옵션인 locations 에 해당 Context의 경로를 지정하면, 테스트 실행 시 해당 정보를 통해 Context 를 로드한다.
 
 {% highlight java %}
 @RunWith(SpringRunner.class)
@@ -60,9 +60,9 @@ public class SpringJUnitTest {
 }
 {% endhighlight %}
 
-- Spring (Annotation Context) : **@SpringApplicationConfiguration**
+Spring (Annotation Context) 의 경우 : **@SpringApplicationConfiguration**
 
-**@SpringApplicationConfiguration** 은 Class, 어노테이션 기반 Context 설정에 대한 테스트 Context 구성 어노테이션이다. Spring 은 4.x 부터 Annotation 기반 Context 설정을 지원하고 있으므로, 해당 어노테이션 역시 Spring 4.x 부터 가능한 것으로 볼 수 있다.
+- **@SpringApplicationConfiguration** 은 Class, 어노테이션 기반 Context 설정에 대한 테스트 Context 구성 어노테이션이다. Spring 은 4.x 부터 Annotation 기반 Context 설정을 지원하고 있으므로, 해당 어노테이션 역시 Spring 4.x 부터 가능한 것으로 볼 수 있다.
 
 {% highlight java %}
 @RunWith(SpringRunner.class)
@@ -76,9 +76,9 @@ public class SpringJUnitTest {
 }
 {% endhighlight %}
 
-- Spring Boot : **@SpringBootTest**
+Spring Boot 의 경우 : **@SpringBootTest**
 
-**@SpringBootTest**는 Spring Boot 1.4 부터 지원되는 어노테이션이며, @SpringApplicationConfiguration 을 포함한 Spring Boot 에서 JUnit 을 사용하기 위한 다양한 기능들을 포함하고 있어 손쉽게 단위 테스트 환경을 구성할 수 있는 어노테이션이다.
+- **@SpringBootTest**는 Spring Boot 1.4 부터 지원되는 어노테이션이며, @SpringApplicationConfiguration 을 포함한 Spring Boot 에서 JUnit 을 사용하기 위한 다양한 기능들을 포함하고 있어 손쉽게 단위 테스트 환경을 구성할 수 있는 어노테이션이다.
 
 {% highlight java %}
 @RunWith(SpringRunner.class)
