@@ -73,7 +73,7 @@ webSocket.onopen = function(message){
     console.log("websocket is connected...");
 }
 
-// 연 결종료 시
+// 연결 종료 시
 webSocket.onclose = function(message){
     console.log("websocket is disconnected...");
 }
