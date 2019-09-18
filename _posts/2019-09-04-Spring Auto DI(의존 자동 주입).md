@@ -19,6 +19,7 @@ XML 방식은 모든 객체 간의 의존 관계를 Context.xml 에 기재해야
 
 우선 어떠한 의존 주입도 하지 않은 채 Bean 만 생성해 놓는다고 가정하자.
 
+
 {% highlight xml %}
 <!-- applicationContext.xml -->
 <?xml version="1.0" encoding="UTF-8">
