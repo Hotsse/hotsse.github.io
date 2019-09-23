@@ -72,4 +72,17 @@ public class UnitTest {
 
 Assert
 
+assertEquals(a, b);
+- 객체 a와 b의 값이 일치함을 검증한다.
 
+assertSame(a, b);
+- 객체 a와 b가 일치함을 검증한다. (연산자 ==)
+
+assertArrayEquals(a, b);
+- 배열객체 a와 b가 일치함을 검증한다.
+
+assertTrue(a);
+- 조건 a가 참인지 검증한다.
+
+assertNotNull(a);
+- 객체 a가 null이 아님을 검증한다.
