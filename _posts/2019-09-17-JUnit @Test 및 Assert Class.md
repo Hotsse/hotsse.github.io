@@ -86,3 +86,4 @@ assertTrue(a);
 
 assertNotNull(a);
 - 객체 a가 null이 아님을 검증한다.
+
