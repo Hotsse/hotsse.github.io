@@ -15,6 +15,7 @@ WebSocket 은 기존의 비연결지향중심의 HTTP 통신의 단점을 극복
 
 Java 에서는 javax.websocket 라이브러리를 구현하는 것으로 WebSocket 의 Server Side 구축이 가능하다. 어노테이션 기반 개발로 직관적인 코드를 확인할 수 있다.
 
+
 {% highlight java %}
 import javax.websocket.*;
 
