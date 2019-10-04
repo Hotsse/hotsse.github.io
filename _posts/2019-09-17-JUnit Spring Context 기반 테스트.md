@@ -42,8 +42,6 @@ Spring 테스트가 가능하도록 Test Runner 를 수정했으니, 테스트 �
 
 모든 Spring 기반 테스트는 Test Runner 도 함께 변경되어야 하므로, 앞서 설명한 @RunWith 어노테이션도 함께 선언한다.
 
-
-
 Spring (XML Context) 의 경우 : **@ContextConfiguration**
 
 - **@ContextConfiguration** 은 Spring의 전통적인 XML 방식 Context 설정에 대한 테스트 Context 구성 어노테이션이다. 어노테이션의 옵션인 locations 에 해당 Context의 경로를 지정하면, 테스트 실행 시 해당 정보를 통해 Context 를 로드한다.
