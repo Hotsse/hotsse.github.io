@@ -9,6 +9,7 @@ jQuery는 JavaScript처럼 대상 HTML elements에서 값을 읽어올 수도 �
 
 -------------------
 
+
 Get Content - text(), html(), val()
 
 text() - 대상 elements 안의 텍스트만을 반환한다.
