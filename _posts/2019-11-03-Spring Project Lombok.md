@@ -31,13 +31,13 @@ Lombok 설치 (Lombok 프로그램 설치 및 IDE 연동)
 
 Dependency 가 추가되었다면, 하기 경로의 Local Repository 로 이동하여 Lombok 의 jar 파일을 찾는다.
 
-{% highlight text %}
-C:\Users\{User}\.m2\repository\org\projectlombok\lombok\{Version}\
+{% highlight dos %}
+cd C:\Users\{User}\.m2\repository\org\projectlombok\lombok\{Version}\
 {% endhighlight %}
 
 상기 경로의 jar 파일을 실행하는 것으로 Lombok 을 설치할 수 있다.
 
-{% highlight text %}
+{% highlight dos %}
 java -jar lombok-{Version}.jar
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ java -jar lombok-{Version}.jar
 
 Eclipse 의 경우, 설치가 완료된 후 eclipse.ini 에 해당 옵션이 추가 되었는지 확인한다.
 
-{% highlight text %}
+{% highlight ini %}
 -vmargs
 -javaagent:lombok.jar
 {% endhighlight %}
