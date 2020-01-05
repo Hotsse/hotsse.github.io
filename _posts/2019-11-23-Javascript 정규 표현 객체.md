@@ -1,6 +1,3 @@
-
-
-
 ---
 layout: post
 title: Javascript 정규 표현 객체
@@ -44,6 +41,8 @@ else{
 }
 
 {% endhighlight %}
+
+
 
 
 
