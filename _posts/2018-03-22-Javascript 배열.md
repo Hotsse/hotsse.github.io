@@ -84,3 +84,4 @@ Users.forEach(function(item, index){ // item, index 인자의 순서는 바뀌�
 |shift()                        |배열의 앞에 있는 요소를 삭제한다|
 |splice(index, removeCount, [Object])|여러 개의 객체를 요소로 추가하거나 삭제한다|
 |slice(index, copyCount)        |여러 개의 요소를 잘라내어 새로운 배열 객체로 만든다|
+
