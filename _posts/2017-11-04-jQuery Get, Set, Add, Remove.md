@@ -109,3 +109,4 @@ empty() - 해당 element 내의 모든 content를 삭제한다.
 {% highlight javascript %}
 $("#div1").empty();
 {% endhighlight %}
+
