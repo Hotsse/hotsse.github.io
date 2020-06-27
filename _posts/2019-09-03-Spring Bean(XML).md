@@ -17,9 +17,9 @@ Bean 선언의 3가지 방법
 Spring에서 Bean을 선언하는 방법은 크게 3가지를 지원하고 있다.
 GenericApplicationContext을 선언 방법에 따라서 다르게 상속하여 사용된다.
 
-GenericXmlApplicationContext : **XML 기반** Bean 객체 생성 정보 호출
-AnnotationConfigApplicationContext : **Java Annotation 기반** Bean 객체 생성 정보 호출 (일반적으로 사용)
-GenericGroovyApplicationContext : Groovy Code 기반 Bean 객체 생성 정보 호출
+- GenericXmlApplicationContext : **XML 기반** Bean 객체 생성 정보 호출
+- AnnotationConfigApplicationContext : **Java Annotation 기반** Bean 객체 생성 정보 호출 (일반적으로 사용)
+- GenericGroovyApplicationContext : Groovy Code 기반 Bean 객체 생성 정보 호출
 
 -------------
 
