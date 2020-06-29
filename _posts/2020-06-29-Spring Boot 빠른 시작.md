@@ -24,7 +24,7 @@ https://start.spring.io
 - Project Explorer > Import... > Import > Maven > Existing Maven Projects > Browse... > 프로젝트 디렉토리 선택 > Finish
 
 JDK 설정
-Project Explorer > Properties > Java Build Path > JDK 설정
+- Project Explorer > Properties > Java Build Path > JDK 설정
 
 -------------
 
@@ -68,6 +68,7 @@ import org.springframework.web.bind.annotation.RestController;
  
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
  
 @RestController
 @RequestMapping({"/", "/home"})
