@@ -117,3 +117,13 @@ HomeController::hello
 CommonInterceptor::postHandle
 CommonInterceptor::afterCompletion
 {% endhighlight %}
+
+-------------
+
+postHandle 과 afterCompletion 의 차이(추가)
+
+postHandle 과 afterCompletion 은 Response(응답)이 클라이언트로 전송되기 전에 실행된다는 점은 같지만 차이가 존재한다.
+
+순서 : postHandle -> afterCompletion 의 순으로 실행된다.
+에러 여부(중요*) : 만약 비즈니스 로직 처리 중에 에러가 발생된다면 afterCompletion 은 실행되지만 postHandle 은 실행되지 않는다.
+(afterCompletion 은 어떠한 상황에서도 실행된다고 생각할 수 있다.)
