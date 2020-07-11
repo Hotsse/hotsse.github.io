@@ -18,11 +18,16 @@ img {
   margin-right: auto;
 }
 
+// hr
+hr {
+  border-top: 2px;
+}
+
 // Tables
 table,
 th,
 td {
-  border: none;
+  border: 1px solid grey;
 }
 .table {
   display: table;
