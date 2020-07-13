@@ -78,7 +78,7 @@ public class HomeController {
     private HomeService homeService;
  
     @GetMapping("")
-    public HomeTestDomain index(HttpServletRequest req, HttpServletResponse res) {
+    public HomeTestVO index(HttpServletRequest req, HttpServletResponse res) {
         return homeService.getTest();
     }     
 }
@@ -97,7 +97,7 @@ public class HomeService {
     @Autowired
     private HomeDao homeDao;
      
-    public HomeTestDomain getTest() {
+    public HomeTestVO getTest() {
         return homeDao.getTest();
     }     
 }
@@ -112,10 +112,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class HomeDao {
  
-    public HomeTestDomain getTest() {
+    public HomeTestVO getTest() {
          
-        // JDBC 연동은 추가 설정이 필요한 관계로 데이터를 임시 생성하는 것으로 갈음
-        HomeTestDomain test = new HomeTestDomain();
+        // JDBC 연동은 추가 설정이 필요한 관계로 데이터를 임시 생성하는 것으로 대체한다.
+        HomeTestVO test = new HomeTestVO();
         test.setParam1("value1");
         test.setParam2("value22");
         test.setParam3("value333");
