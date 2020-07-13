@@ -38,7 +38,7 @@ public class ContextConfig implements WebMvcConfigurer {
 	@Bean
     public ClassLoaderTemplateResolver thymeleafTemplateResolver() {
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
-        templateResolver.setPrefix("templates/"); // 모든 뷰 페이지는 /resource/templates/ 내부에서 검색한다.
+        templateResolver.setPrefix("templates/"); // 모든 뷰 페이지는 /resources/templates/ 내부에서 검색한다.
         templateResolver.setSuffix(".html"); // 모든 뷰 페이지는 .html 이다.
         templateResolver.setTemplateMode("HTML"); // HTML 형식으로 읽는다.
         templateResolver.setCacheable(false); // 캐싱하지 않는다.
@@ -70,13 +70,13 @@ public class HomeController {
          
         System.out.println("HomeController:thymeleaf");
          
-        return "thymeleaf"; // /resource/templates/"thymeleaf.html" 을 뷰 페이지로 반환한다.
+        return "thymeleaf"; // /resources/templates/"thymeleaf.html" 을 뷰 페이지로 반환한다.
     }
      
 }
 {% endhighlight %}
 
-- /resource/templates/thymeleaf.html
+- /resources/templates/thymeleaf.html
 
 {% highlight html %}
 <html>
@@ -84,7 +84,7 @@ public class HomeController {
 <title>Thymeleaf Page</title>
 </head>
 <body>
-Thymeleaf 가 연동된 html 페이지 입낟.
+Thymeleaf 가 연동된 html 페이지 입니다.
 </body>
 </html>
 {% endhighlight %}
