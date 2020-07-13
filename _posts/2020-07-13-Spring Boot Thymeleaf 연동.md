@@ -58,7 +58,7 @@ Spring 에서 Thymeleaf 가 정상적으로 연동될 수 있도록 기본적인
 {% highlight java %}
 package com.nexon.quicksample.home;
  
-import org.springframework.web.bind.annotation.Controller;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
  
 @Controller
