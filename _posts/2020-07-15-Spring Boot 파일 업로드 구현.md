@@ -172,4 +172,4 @@ public class FileController {
 {% endhighlight %}
 
 MultipartRequest 인터페이스를 사용하지 않고도 어노테이션을 통해 필요한 MultipartFile 을 얻어올 수 있다.  
-다중 파일의 경우는 {% raw %}List<MultipartFile>{% endraw %} 를 파라미터로 하여 List 의 형태로도 받을 수 있다.
+다중 파일의 경우는 List&lt;MultipartFile&gt; 를 파라미터로 하여 List 의 형태로도 받을 수 있다.
