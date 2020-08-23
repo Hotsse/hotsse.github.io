@@ -52,7 +52,7 @@ public class ContextConfig implements WebMvcConfigurer {
         return templateEngine;
     }
 
-	@Bean
+    @Bean
     public ClassLoaderTemplateResolver thymeleafTemplateResolver() {
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
         templateResolver.setPrefix("templates/"); // 모든 뷰 페이지는 /resources/templates/ 내부에서 검색한다.
