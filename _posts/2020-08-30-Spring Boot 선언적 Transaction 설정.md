@@ -5,33 +5,33 @@ categories: [Spring]
 comments: true
 ---
 
-Transaction(트랙잭션) 이란?
+Transaction(트랜잭션) 이란?
 
 데이터베이스의 상태를 변경시키는 작업 또는 한번에 수행되어야 하는 연산들의 단위이다.
 
-트랙잭션 단위의 작업이 끝나면 모든 작업이 동시에 Commit 혹은 Rollback 되어야 한다.
+트랜잭션 단위의 작업이 끝나면 모든 작업이 동시에 Commit 혹은 Rollback 되어야 한다.
 
 -------------
 
 Spring Boot 에서의 Transaction 설정
 
-Spring 에서는 비즈니스 로직에서 선언적 트랙잭션을 지원하고, XML 파일 혹은 Java Code Config를 통해 초기 설정을 할 수 있다.
+Spring 에서는 비즈니스 로직에서 선언적 트랜잭션을 지원하고, XML 파일 혹은 Java Code Config를 통해 초기 설정을 할 수 있다.
 하지만, Spring Boot 는 초기 설정 없이 바로 비즈니스 로직에서 어노테이션을 추가하는 것으로 사용이 가능하다.
 
 |옵션|내용|
 |------------------------------|------------------------------|
 |propagation|트랜잭션 동작 도중 다른 트랜잭션을 호출할 때, 어떻게 처리할 것인지 지정하는 옵션|
-|isolation|트랙잭션에서 일관성이 없는 데이터 허용 수준을 설정|
+|isolation|트랜잭션에서 일관성이 없는 데이터 허용 수준을 설정|
 |noRollbackFor|특정 예외 발생 시, rollback 하지 않음을 설정|
 |rollbackFor|특정 예외 발생 시, rollback 하도록 설정|
 |timeout|지정한 시간 내에 메소드 수행이 완료되지 않으면, rollback 하도록 설정|
-|readOnly|읽기 전용 트랙잭션으로 설정|
+|readOnly|읽기 전용 트랜잭션으로 설정|
 
 -------------
 
 테스트
 
-트랙잭션 설정에는 많은 예시가 있지만, 가장 간단한 트랙잭션 내에서 Exception 이 발생했을 시, 모든 변경사항을 Rollback 하는 테스트를 진행해 보자.
+트랜잭션 설정에는 많은 예시가 있지만, 가장 간단한 트랜잭션 내에서 Exception 이 발생했을 시, 모든 변경사항을 Rollback 하는 테스트를 진행해 보자.
 
 - board.xml
 {% highlight xml %}
