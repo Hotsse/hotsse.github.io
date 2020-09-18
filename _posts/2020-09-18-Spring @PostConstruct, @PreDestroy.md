@@ -77,8 +77,8 @@ public class BoardService {
 
 	// @PreDestroy 실행 > Bean 제거
 	@PreDestroy
-	public void close() throws Exception {
-		System.out.println("run BoardService::close()");
+	public void detsroy() throws Exception {
+		System.out.println("run BoardService::destroy()");
 		categories = null;
 	}
 
@@ -108,3 +108,22 @@ class SampleApplicationTests {
 테스트 실행 시, 별도의 호출이 없더라도 @PostConstruct 의 메서드가 실행되어, DB 조회와 콘솔이 찍히는 부분을 확인 할 수 있으며, 반대로 서비스 종료 시 @PreDestroy 의 메서드가 수행되는 부분을 확인할 수 있다.
 서비스 실행 도중 변동이 없음이 보장되는 DB 데이터나 External API 데이터 같은 경우 위와 같이 서비스 실행 시에 일회성으로 데이터를 조회하여 서비스 전체의 성능을 향상 시키는 방법을 도모할 수 있다.  
 (Caching 개념으로 사용할 수 있으나, 남발하는 건 역시 좋지 않다.)
+
+-------------
+
+XML 으로 Bean 을 관리하는 경우
+
+어노테이션을 사용하지 않고 XML 으로 Bean 을 관리하는 경우 아래와 같이 할 수 있다.
+
+{% highlight xml %}
+<!-- ... -->
+
+<!-- init-method, destroy-method 에 로직 상에 존재하는 메서드명을 작성 -->
+<bean id="boardService"
+	class="com.quicksample.nexon.board.service.BoardService"
+	init-method="init"
+	destroy-method="destroy">
+</bean>
+
+<!-- ... -->
+{% endhighlight %}
