@@ -34,13 +34,15 @@ class CallNtsTests {
 	
 	@Test
 	void contextLoads() throws Exception {
-		boolean result = this.callNtsGetTaxType("1198154853");
-		System.out.println("result = " + result);
+		Map<String, Object> result = this.callNtsGetTaxType("2208717483");
+		System.out.println("regYn = " + result.get("regYn"));
+		System.out.println("validYn = " + result.get("validYn"));
 	}
 	
 	@SuppressWarnings("unchecked")
-	private boolean callNtsGetTaxType(String socNo) {
+	private Map<String, Object> callNtsGetTaxType(String socNo) {
 		
+		Map<String, Object> result = new HashMap<String, Object>();
 		final String url = "https://teht.hometax.go.kr/wqAction.do?actionId=ATTABZAA001R08&screenId=UTEABAAA13&popupYn=false";
 		
 		try {
@@ -49,21 +51,35 @@ class CallNtsTests {
 					, socNo
 					, dongCode);
 			
-			String result = new RestTemplate().postForObject(url, request, String.class);
-			Map<String, String> map = new XmlMapper().readValue(result, Map.class);
+			String response = new RestTemplate().postForObject(url, request, String.class);
+			Map<String, String> map = new XmlMapper().readValue(response, Map.class);
 			
 			if(map.get("smpcBmanTrtCntn")
 					.trim()
 					.equals("등록되어 있는 사업자등록번호 입니다.")) {
-				return true;
+				result.put("regYn", "Y");
+				
+				if(Pattern.matches("부가가치세.*입니다\\."
+						, map.get("trtCntn").trim())) {
+					result.put("validYn", "Y");
+				}
+				else {
+					result.put("validYn", "N");
+				}
+			}
+			else {
+				result.put("regYn", "N");
+				result.put("validYn", "N");
 			}
 			
-			return false;
 		}
 		catch(Exception e) {
 			e.printStackTrace();
-			return false;
+			result.put("regYn", "N");
+			result.put("validYn", "N");
 		}
+		
+		return result;
 	}
 }
 
