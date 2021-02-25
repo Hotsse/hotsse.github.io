@@ -111,7 +111,7 @@ public class TestDao {
 	@Qualifier("batchSqlSessionTemplate")
 	protected SqlSession batchSqlSession;
   
-  // Batch 없는 버전
+	// Batch 없는 버전
 	public void insert() {
 		for(int i=0; i<1000; i++) {
 			this.sqlSession.insert("your.insert.query");
@@ -119,7 +119,7 @@ public class TestDao {
 		
 	}
 	
-  // Batch 있는 버전 (월등히 빠를 것이다)
+	// Batch 있는 버전 (월등히 빠를 것이다)
 	public void insertBatch() {
 		for(int i=0; i<1000; i++) {
 			this.batchSqlSession.insert("your.insert.query");
