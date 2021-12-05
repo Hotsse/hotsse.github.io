@@ -15,13 +15,13 @@ comments: true
 개방-폐쇄 원칙 (Open/closed principle, OCP)
 - 소프트웨어 요소는 확장에는 열려 있으나 변경에는 닫혀 있어야 한다.
 - Java의 다형성을 활용하여 인터페이스를 통한 확장 개발이 가능하나, 호출코드에서 구현 객체(class) 를 지정해야 하기에, 순수 Java 만으로는 호출부의 코드 변경을 막을 수 없다.
-- ex) MemberRepository m = new MemoryMemberRepository(); // 구현 객체의 변경을 위해선 호출코드를 변경할 수 밖에 없다.
+  - ex) MemberRepository m = new MemoryMemberRepository(); // 구현 객체의 변경을 위해선 호출코드를 변경할 수 밖에 없다.
 - "Spring DI Container 가 이를 보완해 줄 수 있다."
 
 리스코프 치환 원칙 (Liskov substitution principle, LSP)
 - 프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.
 - 구현 객체는 인터페이스의 의도대로 규약을 지켜 구현되어야 한다.
-- ex) (interface)car.excel() 의 구현체인 (class)k3.excel() 을 뒤로 가게 구현한다면 잘못된 것이다. (의도와 맞지 않음)
+  - ex) (interface)car.excel() 의 구현체인 (class)k3.excel() 을 뒤로 가게 구현한다면 잘못된 것이다. (의도와 맞지 않음)
 
 인터페이스 분리 원칙 (Interface segregation principle, ISP)
 - 특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다.
@@ -31,7 +31,7 @@ comments: true
 의존관계 역전 원칙 (Dependency inversion principle, DIP)
 - 프로그래머는 추상화에 의존해야지, 구체화에 의존하면 안된다. 의존성 주입은 이 원칙을 따르는 방법 중 하나다.
 - 프로그래머는 인터페이스의 구현객체에 대해서 전혀 알지 못하더라도 인터페이스만 가지고 개발이 가능해야 한다.
-- ex) MemberRepository m; // 해당 코드만 가지고도 정상적인 호출이 가능해야 한다.
+  - ex) MemberRepository m; // 해당 코드만 가지고도 정상적인 호출이 가능해야 한다.
 - 순수 Java 로는 인터페이스를 구현한 구현 객체를 지정하지 않으면 실행이 불가하기에 위의 예제를 지킬 수 없다.
 - "Spring DI Container 가 이를 보완해 줄 수 있다."
 
@@ -44,7 +44,7 @@ comments: true
 
 실무 고민
 - 인터페이스를 도입하면 추상화라는 비용이 발생한다. 개발자는 추가 요구사항 개발을 위해 인터페이스와 구현 객체를 전부 수정해야 하며, 해당 구현을 들여다 보기 위해 인터페이스와 구현 객체를 함께 봐야 하는 1 Depth 의 작업이 더 필요하다.
-- ex) MemberService -> MemberServiceImpl
+  - ex) MemberService -> MemberServiceImpl // 간단한 기능 구현과 분석에 있어어도, 2개의 객체를 다 들여다봐야 한다
 - 기능을 확장할 가능성이 없다면, 구현 객체를 직접 호출하고, 향후 확장이 필요할 때 인터페이스를 도입하도록 리팩토링 하는 것도 방법이다.
 - 개발 스펙이 고정된 작은 사이즈의 프로젝트에서는 위의 방법이 적절하다고 개인적으로 생각한다.
 
