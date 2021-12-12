@@ -23,7 +23,7 @@ J2EE (Java To Enterprise Edition) = Java EE -> 그리고 Jakarta EE
 - Sun 을 인수한 Oracle 이 2017년까지 Java EE 를 8 까지 이끌어왔지만 수익화 실패 등의 이유로 기술 주도권을 비영리 단체인 Eclipse 재단으로 이관함
 - Eclipse 재단은 Java EE -> Jakarta EE 로 명칭을 변경 했으며, 상표권 등의 이유로 패키지명도 javax.* -> Jakarta.* 로 변경되었음 (히스토리 없이 버전을 옮긴 개발자들에게 엄청난 혼란을 야기할 것으로 보임)
 - (글 작성 기준 최신 버전인) Spring Framework 5.3.x 기준으로 내부 기술로는 아직 Java EE 8 을 사용하고 있음 (Spring 5 가 2017년에 나왔기 때문) 
-- ![image](https://user-images.githubusercontent.com/23256138/145703993-8dc870e5-7010-40ac-9512-59efe446ec18.png)
+- ![image](https://user-images.githubusercontent.com/23256138/145703993-8dc870e5-7010-40ac-9512-59efe446ec18.png){:height="50%" width="50%"}
 
 (추가2)
 - 2021년 9월 발표에 의하면, Spring Framework 6 및 Spring Boot 3 이 2022년도 4분기에 Release 될 예정임
