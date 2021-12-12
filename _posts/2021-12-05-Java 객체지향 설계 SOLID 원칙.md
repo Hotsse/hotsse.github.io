@@ -38,8 +38,8 @@ comments: true
 ------
 
 다형성을 예시로 이해하자면...
-- ![image](https://user-images.githubusercontent.com/23256138/145704389-37f93995-7448-4497-bcae-6a69d5a1912c.png){:height="50%" width="50%"}
-- ![image](https://user-images.githubusercontent.com/23256138/145704394-6ec8bcdd-565a-4ae3-a445-c8d401bad952.png){:height="50%" width="50%"}
+- ![image](https://user-images.githubusercontent.com/23256138/145704389-37f93995-7448-4497-bcae-6a69d5a1912c.png){:height="40%" width="40%"}
+- ![image](https://user-images.githubusercontent.com/23256138/145704394-6ec8bcdd-565a-4ae3-a445-c8d401bad952.png){:height="40%" width="40%"}
 
 ------
 
