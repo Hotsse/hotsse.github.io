@@ -37,6 +37,12 @@ comments: true
 
 ------
 
+다형성을 예시로 이해하자면...
+- ![image](https://user-images.githubusercontent.com/23256138/145704389-37f93995-7448-4497-bcae-6a69d5a1912c.png){:height="50%" width="50%"}
+- ![image](https://user-images.githubusercontent.com/23256138/145704394-6ec8bcdd-565a-4ae3-a445-c8d401bad952.png){:height="50%" width="50%"}
+
+------
+
 고찰
 - 모든 설계에 역할(interface)과 구현(class)을 분리하자.
 - App. 설계는 역할 중심적이어야 하며, 구현 객체는 언제든지 유연하게 변경할 수 있도록 만드는 것이 좋은 객체지향 설계다.
