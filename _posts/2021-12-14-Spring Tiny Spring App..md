@@ -18,6 +18,7 @@ spring-context 만을 사용하여 아주 간단한 기능만 지원하는 작�
 pom.xml
 - Maven 을 통해 spring.context 라이브러리만 설치한다
 - 그러나 Library Dependency 에 의해 5개 정도의 라이브러리가 추가로 설치된다 (하지만 spring-context 만 사용한다)
+
 ``` xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -42,6 +43,7 @@ pom.xml
 ```
 
 TestRepository.java
+
 ``` java
 package simple_di.simple.test;
 
@@ -54,6 +56,7 @@ public class TestRepository {
 ```
 
 TestService.java
+
 ``` java
 package simple_di.simple.test;
 
@@ -74,6 +77,7 @@ public class TestService {
 AppConfig.java
 - @Configuration 과 @Bean 을 통해 위에서 작성한 클래스들을 Bean 객체로 생성한다
 - @Configuration 가 선언된 클래스 안에서 @Bean 으로 작성한 객체는 Spring DI Container에 의해 무조건 싱글톤임을 보장받는다.
+
 ``` java
 package simple_di.simple;
 
@@ -100,6 +104,7 @@ public class AppConfig {
 
 Main.java
 - 위에서 구성된 구현 객체를 통해 테스트를 진행한다
+
 ``` java
 package simple_di.simple;
 
