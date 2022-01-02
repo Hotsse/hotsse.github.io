@@ -14,9 +14,9 @@ Traversing(순회)? 대상이 되는 element에서 목표로 하는 다른 eleme
 올라가기
 
 parent() : 바로 상위의 부모를 리턴한다.
-{% highlight javascript %}
+```javascript
 $("span").parent();
-{% endhighlight %}
+```
 
 parents() : 바로 상위 ~ 최상위까지의 모든 부모를 리턴한다.
 parentsUntil() : 바로 상위 ~ action 안의 조건에 부합하는 element가 나올때까지 모든 부모를 리턴한다.
