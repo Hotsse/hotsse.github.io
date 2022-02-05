@@ -28,9 +28,10 @@ SpringBootServletInitializer
 
 전통적인 Spring Web App. 구성 시 외부 Tomcat 위에서 동작하도록 하기 위해서는 web.xml (Deployment Descriptor, DD)에 Application Context 를 등록해야만 한다. 이는 Apache Tomcat(Servlet Container) 이 구동될 때 /WEB-INF 디렉토리에 존재하는 web.xml 안의 설정을 읽어 웹 애플리케이션을 구성하기 때문이다.
 
-하지만 Servlet 3.0 스펙으로 업데이트 되면서 web.xml 이 아닌 다른 방식으로도 서블릿 구동이 가능해졌다. 이는 web.xml 설정을 Spring Framework 에서 제공하는 WebApplicationInitializer 인터페이스를 구현하여 대신할 수 있게 됐고, Java Config 기반으로 ServletContext 에 Spring IoC 컨테이너(AnnotationConfigWebApplicationContext) 를 생성하여 추가할 수 있도록 변경됐기 때문이다.
+하지만 Servlet 3.0 스펙으로 업데이트 되면서 web.xml 이 아닌 다른 방식으로도 서블릿 구동이 가능해졌다. 이는 web.xml 설정을 Spring Framework 에서 제공하는 WebApplicationInitializer 인터페이스를 구현하여 대신할 수 있게 됐고, Java Config 기반으로 ServletContext 에 Spring IoC 컨테이너(AnnotationConfigWebApplicationContext) 를 생성하여 추가할 수 있도록 변경됐기 때문이다. Spring Boot 는 위에서 설명한 WebApplicationInitializer 를 구현한 SpringBootServletInitializer 를 미리 구성했으며, 이를 상속받는 것으로 web.xml 설정을 대신할 수 있게 된다.
 
-Spring Boot 는 위에서 설명한 WebApplicationInitializer 를 구현한 SpringBootServletInitializer 를 미리 구성했으며, 이를 상속받는 것으로 web.xml 설정을 대신할 수 있게 된다.
+다만 war packaging 이더라도 embed Tomcat 을 사용한다면 SpringBootServletInitializer 를 상속한 기본 클래스를 삭제해도 무방하다.  
+(web.xml 설정 자체를 사용하지 않기 때문이다)
 
 ------------
 
