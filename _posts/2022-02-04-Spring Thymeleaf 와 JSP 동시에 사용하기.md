@@ -17,7 +17,22 @@ comments: true
 
 프로젝트 설정
 
-application configuration 을 아래와 같이 설정한다. (YAML 을 사용하고 있다)
+우선 Spring Boot 에서 JSP 를 사용하기 위해선 아래의 라이브러리 추가가 필요하다. (Dependency 설정은 Maven 기준으로 작성한다)
+
+``` xml
+...
+<dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>jstl</artifactId>
+</dependency>
+<dependency>
+	<groupId>org.apache.tomcat.embed</groupId>
+	<artifactId>tomcat-embed-jasper</artifactId>
+</dependency>
+...
+```
+
+그 후, application configuration 을 아래와 같이 설정한다. (YAML 을 사용하고 있다)
 
 ``` yaml
 spring:
