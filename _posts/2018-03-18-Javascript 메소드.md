@@ -39,36 +39,36 @@ function 함수명(인자명1, 인자명2, ...){
 자바스크립트는 여러가지 방법으로 인해 생성한 변수에 메소드를 넣는것이 가능하다.
 
 -
-{% highlight javascript %}
+``` javascript
 var 객체명 = new Object(); // var 객체명 = {}; 과 동일
 
 객체명.함수명 = function(인자명1, 인자명2, ...){
      // 함수 실행...
 };
-{% endhighlight %}
+```
 
 ex)
-{% highlight javascript %}
+``` javascript
 var sum = new Object();
 
 sum.calc = function(num1, num2){
      return num1 + num2;
 };
-{% endhighlight %}
+```
 
 -
-{% highlight javascript %}
+``` javascript
 var 변수명 = function(인자명1, 인자명2, ...){
      // 함수 실행...
 };
-{% endhighlight %}
+```
 
 ex)
-{% highlight javascript %}
+``` javascript
 var sum = function(num1, num2){
      return num1 + num2;
 };
-{% endhighlight %}
+```
 
 메소드 자체에는 이름이 없으나, 객체의 속성(또는 변수)의 이름을 빌려서 호출되기에, 이러한 구조의 함수를 익명 함수(Anonymous function) 라고 한다.
 
