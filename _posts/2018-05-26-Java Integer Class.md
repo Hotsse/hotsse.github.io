@@ -5,14 +5,15 @@ categories: [Java]
 comments: true
 ---
 
-int <=> 2진수 String
+int <=> n진수 String
 
-{% highlight java %}
-// int to 2진수 String
-int n = 55;
-String bin = Integer.tobinaryString(n); // 110111
+``` java
+int radix = 2; // 2진수
+int from = 55; // origin
 
-// 2진수 String to int
-String bin2 = "110111";
-int n2 = Integer.parseInt(bin2, 2);
-{% endhighlight %}
+// int to n진수 String
+String str = Integer.toString(from, radix); // expect: "110111"
+
+// n진수 String to int
+int to = Integer.parseInt(str, radix); // expect: 55
+```
