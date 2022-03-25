@@ -7,7 +7,7 @@ comments: true
 
 Map 선언 및 사용법
 
-{% highlight java %}
+``` java
 import java.util.*;
  
 Map<Object, Object> map = new HashMap<Object, Object>();
@@ -15,13 +15,13 @@ Map<Object, Object> map = new HashMap<Object, Object>();
 map.put("key", "value"); // 데이터 삽입
  
 Object value = map.get("key"); // 데이터 로드
-{% endhighlight %}
+```
 
 ------------
 
 Map 순회(foreach)
 
-{% highlight java %}
+``` java
 import java.util.*;
  
 Map <String, Object> map = new HashMap();
@@ -37,13 +37,13 @@ for (Map.Entry<String, Object> entry : map.entrySet()) {
     ...
     */
 }
-{% endhighlight %}
+```
 
 --------------------
 
 Java List Class
 
-{% highlight java %}
+``` java
 import java.util.*;
  
 // 선언
@@ -65,4 +65,4 @@ for(int i=0; i<list.size(); i++){
 for(int element : list){
     System.out.println("list-elements = " + element);
 }
-{% endhighlight %}
+```
