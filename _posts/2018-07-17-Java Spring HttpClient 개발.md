@@ -24,7 +24,7 @@ HTTP 1.1 RESTful한 API 통신을 위한 서버를 개발한다고 하면 위의
 하기 메소드들은 각 HTTP Method 별로 통신을 하기 위한 진입 메소드이다.
 (HTTP Method 별로 메소드를 구분해 놓은 이유는 아래에 적도록 하겠다)
 
-{% highlight java %}
+``` java
 /**
  * <pre>
  * HTTP Method(Get) 로 Request 진행
@@ -108,7 +108,7 @@ private Map<String, String> executeHttpPut(String uri, String body) throws Excep
  
     return map;
 }
-{% endhighlight %}
+```
 
 
 상기 두 개의 메소드(GET, DELETE) 와 그 아래의 메소드(POST, PUT) 의 차이점은 무엇일까?
@@ -124,7 +124,7 @@ POST과 PUT 은 setEntity(String body); 라는 기능이 구현되어 있다.
 Request 객체가 생성되었다면, 적합한 URI 에 해당 정보로 통신을 취하고 응답받은 Response 객체를 파싱하여, 원하는 결과를 얻는 일만 남았다.
 하기 메소드에 그에 대한 내용이 구현되어 있다.
 
-{% highlight java %}
+``` java
 /**
  * <pre>
  * HTTP Client Request 공통 실행 함수
@@ -182,7 +182,7 @@ private Map<String, String> executeHttpClient(HttpRequestBase httpRequest, Strin
  
     return map;
 }
-{% endhighlight %}
+```
 
 상기 메소드 중에서, 특히 눈여겨 봐야할 것은 finally 구문이다.
 상기 소스코드는 어느 한줄이 빠져도 통신이 제대로 되지 않기 때문에, 디버깅이 쉬우나, finally 구문의 session close 를 하지 않는다면, 세션이 종료되지 않고 지속적으로 쌓여, 서버 과부하를 초래할 수 있다.
@@ -192,7 +192,7 @@ private Map<String, String> executeHttpClient(HttpRequestBase httpRequest, Strin
 
 메소드 호출(통신 실행 예제)
 
-{% highlight java %}
+``` java
 public @ResponseBody Map<String, String> updateComment(@RequestParam Map<String, Object> param, ModelMap model, HttpServletRequest request, HttpServletResponse response) throws Exception{
  
     // ------- 파라미터 및 쿠키 정보 획득
@@ -228,4 +228,4 @@ public @ResponseBody Map<String, String> updateComment(@RequestParam Map<String,
  
     return map;
 }
-{% endhighlight %}
+```
