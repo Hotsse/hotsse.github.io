@@ -14,22 +14,22 @@ META-INF\MANIFEST.MF 오류
 
 아래와 같은 에러가 나는 경우에 대한 해결 방법이다.
 
-{% highlight text %}
+``` text
 ... \target\m2e-wtp\web-resources\META-INF\MANIFEST.MF (지정된 경로를 찾을 수 없습니다)
-{% endhighlight %}
+```
 
 
 Project Preferences 설정
 
-{% highlight text %}
+``` text
 Window > Preferences > Maven > Java EE Integration > WAR Project preferences
-{% endhighlight %}
+```
 
 상기 옵션에서 아래 항목에 대한 체크를 해제한다.
 
-{% highlight text %}
+``` text
 'Maven Archiver generates files under the build directory'
-{% endhighlight %}
+```
 
 
 target 클리어
@@ -50,12 +50,13 @@ pom.xml 첫 줄 > unknown 에러
 
 - pom.xml 에서 Maven 버전 변경
 pom.xml
-{% highlight xml %}
+
+``` xml
 <properties>
     <java.version>1.8</java.version>
     <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 </properties>
-{% endhighlight %}
+```
 
 이후 방법 1과 같이 메이븐 업데이트를 진행.
 
