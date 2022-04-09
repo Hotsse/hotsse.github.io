@@ -33,7 +33,7 @@ ES6(ECMAScript6)는 완전히 새로운 개념이 아니다. ES5와 같이 스�
 
 아래는 그에 대한 예이다.
 
-{% highlight javascript %}
+``` javascript
 // add function with ES5
 var add_es5 = function(a, b){
     return a + b;
@@ -45,9 +45,9 @@ console.log(add_es5(2,3)); // output: 5
 var add_es6 = (a, b) => a + b;
 
 console.log(add_es6(2,3)); // output: 5
-{% endhighlight %}
+```
 
-{% highlight javascript %}
+``` javascript
 var name = "홍길동"
 var age = "20";
 
@@ -56,7 +56,7 @@ conesole.log("name : " + name + " / age : " + age); // output: "name: 홍길동 
 
 // print string with ES6's Template String
 console.log("name : ${name} / age : ${age}"); // output: "name: 홍길동 / age : 20"
-{% endhighlight %}
+```
 
 -------------
 
