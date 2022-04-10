@@ -18,7 +18,7 @@ let 의 특징
 
 - Block-level scope
 
-{% highlight javascript %}
+``` javascript
 let a = "global";
 let g = "global";
 {
@@ -30,20 +30,21 @@ let g = "global";
 }
 console.log(a); // output: "global";
 console.log(b); // error
-{% endhighlight %}
+```
 
 - 변수 중복 선언 불가
 
-{% highlight javascript %}
+``` javascript
 var a = 111;
 var a = 222;
 
 console.log(a); // output: 222;
-{% endhighlight %}
-{% highlight javascript %}
+```
+
+``` javascript
 var a = 111;
 var a = 222; // error
-{% endhighlight %}
+```
 
 - 호이스팅 불가
 
@@ -51,13 +52,13 @@ var a = 222; // error
 
 호이스팅을 지원하지 않는 let 은 선언 전에 호출된 경우 error 를 내게 된다.
 
-{% highlight javascript %}
+``` javascript
 console.log(a); // undefined
 var a = 1;
 
 console.log(b); // error
 let b = 2;
-{% endhighlight %}
+```
 
 -------------
 
@@ -68,13 +69,13 @@ const 는 상수를 정의하는데 사용된다.
 - Block-level scope
 
 - 재할당 불가능
-{% highlight javascript %}
+``` javascript
 let a = 111;
 a = 222; // input: 222;
 
 const b = 111;
 b = 222; // error
-{% endhighlight %}
+```
 
 -------------
 
