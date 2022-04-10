@@ -67,8 +67,8 @@ const 의 특징
 const 는 상수를 정의하는데 사용된다.
 
 - Block-level scope
-
 - 재할당 불가능
+
 ``` javascript
 let a = 111;
 a = 222; // input: 222;
