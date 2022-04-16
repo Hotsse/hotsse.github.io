@@ -11,17 +11,14 @@ Template String 은 여러 형태의 변수 값을 포함하고 문자열을 표
 
 -------------
 
-
-
-
 선언 방법
 
-{% highlight javascript %}
+``` javascript
 let story = `Hello World! I'm a programmer from "Korea"`;
 console.log(story);
-{% endhighlight %}
+```
 
-{% highlight javascript %}
+``` javascript
 const a = 1, b = 2;
 int sum = a+b;
 
@@ -32,7 +29,7 @@ console.log("sum calc: " + a + " + " + b + " = " + sum); // output: "sum calc: 1
 
 // ES6
 console.log(`sum calc: ${a} + ${b} = ${sum}`); // output: "sum calc: 1 + 2 = 3"
-{% endhighlight %}
+```
 
 -------------
 
@@ -46,10 +43,11 @@ EL 은 JSP의 가독성을 높히기 위해 개발된 JSP 코드 표현언어이
 스택 오버플로우에서는 아래의 두 가지 방법을 제시하고 있다.
 
 - 블록 감싸기
-{% highlight javascript %}
+
+``` javascript
 let today = "2019-08-26";
 let msg = `오늘은 ${'${today}'} 입니다`;
-{% endhighlight %}
+```
 
 - .js 파일 별도 관리
 ES6 관련 스크립트를 .js 파일로 별도 관리하는 방식으로 우회하는 방식 
