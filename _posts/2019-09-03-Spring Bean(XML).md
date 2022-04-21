@@ -33,7 +33,7 @@ XML 메타 정보를 통한 Bean 객체 선언 방법
 
 Bean 객체로 선언할 예제 클래스를 생성한다. 간단한 예제를 아래의 코드로 구현해 보았다.
 
-{% highlight java %}
+``` java
 public class BeanExample {
 
     private String format;
@@ -47,7 +47,7 @@ public class BeanExample {
     }
 
 }
-{% endhighlight %}
+```
 
 -------------
 
@@ -58,7 +58,7 @@ XML 기반의 Bean 선언은 <bean> 태그를 통해 가능하다. 태그 내 �
 - class : 해당 Bean을 생성할 모체 클래스
 - property : Bean에 전달할 파라미터들
 
-{% highlight xml %}
+``` xml
 <?xml version="1.0" encoding="UTF-8">
 
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -70,11 +70,11 @@ XML 기반의 Bean 선언은 <bean> 태그를 통해 가능하다. 태그 내 �
     </bean>
 
 </beans>
-{% endhighlight %}
+```
 
 XML 을 생성한 뒤에는 다음과 같이 어플리케이션 실행 시에 만들어진 xml 파일을 기반으로 GenericXmlApplicationContext 를 선언하여 컨텍스트를 생성하고, 컨텍스트 안에 있는 bean을 getBean() 메서드를 통해 접근하여 사용할 수 있다. 
 
-{% highlight java %}
+``` java
 import org.psringframework.context.support.GenericXmlApplicationContext;
 
 public class Main {
@@ -90,4 +90,4 @@ public class Main {
         ctx.close();
     }
 }
-{% endhighlight %}
+```
