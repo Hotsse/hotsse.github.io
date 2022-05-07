@@ -22,7 +22,7 @@ Bean 선언 방법 중 클래스에 어노테이션을 적용시켜 XML 없이 �
 - 메서드명 : Bean ID
 - 반환형 : Bean Class
 
-{% highlight java %}
+``` java
 @Configuration
 public class ContextConfig {
 
@@ -37,13 +37,13 @@ public class ContextConfig {
     }
 
 }
-{% endhighlight %}
+```
 
 -------------
 
 어노테이션을 사용하여 선언한 Bean 객체를 획득하여 사용하는 것은 XML과 크게 다르지 않다.
 
-{% highlight java %}
+``` java
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -59,7 +59,7 @@ public class Main {
         ctx.close();
     }
 }
-{% endhighlight %}
+```
 
 -------------
 
@@ -69,7 +69,7 @@ Spring Web Application 실행 시, 앞서 설명한 AnnotationConfigApplicationC
 
 @EnableWebMvc 는 @Configuration 어노테이션과 함께 사용되어, 해당 클래스 안의 Config 정보를 Spring MVC 실행 시에 등록시키는 기능을 제공한다.
 
-{% highlight java %}
+``` java
 @Configuration
 @EnableWebMvc
 public class ContextConfig implements WebMvcConfigurer {
@@ -82,9 +82,9 @@ public class ContextConfig implements WebMvcConfigurer {
 	//...
 
 }
-{% endhighlight %}
+```
 
-{% highlight java %}
+``` java
 public class TestService() {
 
 	@Autowired
@@ -94,4 +94,4 @@ public class TestService() {
 		testDao.something(); // ...
 	}
 }
-{% endhighlight %}
+```
