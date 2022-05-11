@@ -42,7 +42,7 @@ public List<FooVO> foolist() {
 }
 ```
 
-`` java
+``` java
 // 현재
 public FooVO foo() {
 	return fooSqlSession.selectOne("foo");
