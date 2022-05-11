@@ -16,7 +16,7 @@ WebSocket 은 기존의 비연결지향중심의 HTTP 통신의 단점을 극복
 Java 에서는 javax.websocket 라이브러리를 구현하는 것으로 WebSocket 의 Server Side 구축이 가능하다. 어노테이션 기반 개발로 직관적인 코드를 확인할 수 있다.
 
 
-{% highlight java %}
+``` java
 import javax.websocket.*;
 
 @ServerEndpoint("/websocket")
@@ -58,7 +58,7 @@ public class websocket {
         t.printStackTrace();
     }
 }
-{% endhighlight %}
+```
 
 -------------
 
@@ -66,7 +66,7 @@ public class websocket {
 
 웹 브라우저의 클라이언트 개발은 Javascript 의 WebSocket 객체를 구현하는 것으로 가능하다. 각기 필요한 상황에 맞는 콜백 함수를 구현하고 메시지 송신, 연결 종료 등 클라이언트 주도 기능 역시 구현한다.
 
-{% highlight javascript %}
+``` javascript
 var webSocket = new WebSocket("ws://localhost:8080/websocket"); // ws://{Address}/{EndPoint}
 
 // 연결 시
@@ -98,4 +98,4 @@ var sendMessage = function(message){
 var disconnect = function(){
     webSocket.close();
 }
-{% endhighlight %}
+```
