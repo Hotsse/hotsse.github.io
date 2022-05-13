@@ -12,7 +12,7 @@ comments: true
 
 단위 테스트 클래스는 관례에 따라 접미사 "Test" 를 붙이도록 한다.
 
-{% highlight java %}
+``` java
 public class UnitTest {
 
     @Test
@@ -22,7 +22,7 @@ public class UnitTest {
         System.out.println("a + b = " + (a + b)); // output: "a + b = 3"
     }
 }
-{% endhighlight %}
+```
 
 해당 코드를 작성 후, Run As... > JUnit Test 메뉴를 통해 단위 테스트를 실행 할 수 있다.
 
@@ -33,7 +33,7 @@ public class UnitTest {
 - timeout
 timeout 은 테스트 메서드의 수행시간 제한 옵션이다. timeout 옵션이 걸린 테스트 메서드는 옵션에 설정된 시간(ms 단위)을 초과하면 자동으로 테스트 실패로 처리된다.
 
-{% highlight java %}
+``` java
 public class UnitTest {
 
     @Test(timeout=10)
@@ -46,7 +46,7 @@ public class UnitTest {
     }
 
 }
-{% endhighlight %}
+```
 
 상기 테스트 메서드는 10ms 의 수행시간 제한이 있으며, 테스트는 실패할 것이다. (환경에 따라서는.. 어쩌면 될지도?)
 
@@ -54,7 +54,7 @@ public class UnitTest {
 expected 는 테스트 중 Exception 이 발생하는지의 여부로 테스트의 실행 결과를 판단하는 옵션이다.
 옵션으로 지정된 Exception 이 발생 시 성공, 발생하지 않은 경우 실패로 간주된다.
 
-{% highlight java %}
+``` java
 public class UnitTest {
 
     @Test(expected=NumberFormatException.class)
@@ -64,7 +64,7 @@ public class UnitTest {
         int a = Integer.parseInt(str); // NumberFormatException occured
     }
 }
-{% endhighlight %}
+```
 
 상기 테스트 메서드는 Integer 로 변환 불가능한 문자열을 변환 시도 하였으므로, NumberFormatException 이 발생하며, expected 옵션의 Exception 과 일치하기 때문에, 테스트는 성공하게 된다.
 
