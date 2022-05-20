@@ -50,6 +50,5 @@ Spring vs. Spring Boot
 주요 Dependency 버전 호환 정보 (2.2.5 기준)
 
 Spring boot 는 버전 별로 최적화된 Dependency 버전들을 관리하고 있다. Dependency 추가 시 버전 정보를 기입하지 않는다면, 자동적으로 아래 리스트에 따른 최적 호환 버전으로 설정된다. (리스트에 존재하지 않는 Custom Dependency 의 경우는 필히 버전을 지정해줘야 한다)  
-{% highlight http %}
+
 https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/reference/html/appendix-dependency-versions.html#appendix-dependency-versions
-{% endhighlight %}
