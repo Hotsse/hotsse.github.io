@@ -12,10 +12,10 @@ Javascript 정규 표현 객체
 
 정규 표현 객체를 생성하는 기본형은 두 가지가 있다.
 
-{% highlight javascript %}
+``` javascript
 var exp1 = new RegExp(패턴, 검색_옵션);
 var exp2 = /패턴/검색_옵션
-{% endhighlight %}
+```
 
 -------------
 
@@ -29,7 +29,7 @@ var exp2 = /패턴/검색_옵션
 
 지정한 특정 문자열이 정규 표현 규칙에 부합하는지를 체크하는 메서드이다.
 
-{% highlight javascript %}
+``` javascript
 
 var reg1 = /css/;
 
@@ -39,10 +39,4 @@ if(reg1.test("html css javascript")){
 else{
     alert("FAIL");
 }
-
-{% endhighlight %}
-
-
-
-
-
+```
