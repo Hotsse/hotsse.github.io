@@ -8,9 +8,9 @@ comments: true
 프로젝트 생성
 
 IDE 별로 프로젝트 생성 과정이 다르기 때문에 Spring 공식 홈페이지에서 프로젝트 생성 툴을 지원하고 있다.
-{% highlight http %}
+``` http
 https://start.spring.io
-{% endhighlight %}
+```
 
 - 프로젝트 기본 설정에서 빌드(프로젝트) 관리 도구, 언어, 버전 및 프로젝트 기본 정보를 입력
 - 프로젝트에서 사용하고자 하는 Dependency 들을 선택 후 Generate 버턴으로 프로젝트 생성 -> 선택한 Dependency 들은 pom.xml 에 자동으로 등록됨
@@ -48,17 +48,17 @@ JDK 설정
 (JSP, JDBC 구성은 커스텀 설정이 필요하여 REST API 기반의 임시 데이터 생성 로직으로 테스트 한다)
 
 package 및 class 구성
-{% highlight bash %}
+``` bash
 me.hotsse.quicksample/
 └── home
     └── HomeController.java
     └── HomeDao.java
     └── HomeService.java
     └── HomeTestVO.java
-{% endhighlight %}
+```
 
 - HomeController.java
-{% highlight java %}
+``` java
 package me.hotsse.quicksample.home;
 
 import javax.servlet.http.HttpServletRequest;
@@ -82,10 +82,10 @@ public class HomeController {
         return homeService.getTest();
     }     
 }
-{% endhighlight %}
+```
 
 - HomeService.java
-{% highlight java %}
+``` java
 package me.hotsse.quicksample.home;
  
 import org.springframework.beans.factory.annotation.Autowired;
@@ -101,10 +101,10 @@ public class HomeService {
         return homeDao.getTest();
     }     
 }
-{% endhighlight %}
+```
 
 - HomeDao.java
-{% highlight java %}
+``` java
 package me.hotsse.quicksample.home;
  
 import org.springframework.stereotype.Repository;
@@ -123,10 +123,10 @@ public class HomeDao {
         return test;
     }
 }
-{% endhighlight %}
+```
 
 - HomeTestVO.java
-{% highlight java %}
+``` java
 package me.hotsse.quicksample.home;
 
 import lombok.Data;
@@ -138,4 +138,4 @@ public class HomeTestVO {
     private String param2;
     private String param3;
 }
-{% endhighlight %}
+```
