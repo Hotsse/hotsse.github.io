@@ -20,7 +20,7 @@ Spring 의 전통적인 Configuration 구조 생석 방식
 
 Spring 의 전통적인 Configuration 파일의 생성법(XML 기반)은 다음과 같다.
 
-{% highlight xml %}
+``` xml
 <beans>
   <context:annotation-config />
   <mvc:default-servlet-handler/>
@@ -59,7 +59,7 @@ Spring 의 전통적인 Configuration 파일의 생성법(XML 기반)은 다음�
 
   <!-- ... -->
 </beans>
-{% endhighlight %}
+```
 
 보편적으로 오래된 레거시 프로젝트에 적용되는 경우가 많아 자잘한 설정이 많다는 점도 있겠지만, 기본적인 부분들까지도 일일이 설정해줘야 하는 번거로움이 있는 것은 사실이다.
 
@@ -69,7 +69,7 @@ Spring Boot 의 AutoConfiguration
 
 Spring Boot 의 Configuration 구성 방식은 다음과 같다.
 
-{% highlight java %}
+``` java
 package com.nexon.quicksample;
  
 import org.springframework.boot.SpringApplication;
@@ -82,7 +82,7 @@ public class QuicksampleApplication {
         SpringApplication.run(QuicksampleApplication.class, args);
     } 
 }
-{% endhighlight %}
+```
 
 **@SpringBootApplication** 어노테이션은 기존 Spring 서비스를 구동시키기 위한 모든 기본 설정을 지정해 놓은 어노테이션으로, 그의 내부는 아래 3개의 주요한 어노테이션 기능으로 구성되어 있다.
 
@@ -102,7 +102,7 @@ Spring Boot 의 Configuration 구조 생성 방식
 
 앞절의 내용대로, Spring Boot 는 대부분의 설정을 자동적으로 생성해 주지만, 모든 서비스마다 고유한 커스텀 설정은 필요하기에 아래의 방법으로 커스텀 설정을 제어할 수 있다.
 
-{% highlight java %}
+``` java
 package com.nexon.quicksample.core.config;
  
 import org.springframework.context.annotation.Configuration;
@@ -116,7 +116,7 @@ public class ContextConfig implements WebMvcConfigurer {
     */
      
 }
-{% endhighlight %}
+```
 
 우선 @Configuration 어노테이션으로 해당 클래스가 Configuration 설정을 위한 클래스 임을 선언한다. 이는 전통적인 구성 방식에서 <beans>...</beans> 형식의 *context.xml 파일을 생성하여 web.xml 에 추가하는 것과 같은 행위이다. 앞 절에서 설명한 @SpringBootApplication 어노테이션이 @Configuration 어노테이션이 선언된 클래스들을 자동으로 검색하여 Configuration 설정 파일처럼 인식하게 하는 역할을 한다.
 
