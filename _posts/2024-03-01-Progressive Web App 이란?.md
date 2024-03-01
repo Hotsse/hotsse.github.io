@@ -1,6 +1,6 @@
 ---
 layout: post
-title: pwa
+title: Progressive Web App 이란?
 categories: [App]
 comments: true
 ---
