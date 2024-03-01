@@ -95,6 +95,7 @@ PWA 시작하기
 - 보안(https) 도메인에서 제공되는 웹사이트 (localhost 는 예외적으로 사용가능)
 - 디바이스에서 앱을 나타낼 아이콘 이미지
 - Service Worker(Chrome 브라우저에서만 필수)
+
 ``` javascript
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-sw.js');
  
