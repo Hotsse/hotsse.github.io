@@ -27,8 +27,12 @@ STS(Spring Tool Suite)은 Spring Framework 기반 개발을 지원하는 통합 
 STS 플러그인 설치하기
 
 1. 이클립스에서 Help > Eclipse Marketplace... 에 들어간다.
+<img width="798" alt="image" src="https://github.com/user-attachments/assets/6accf4f0-0db9-4746-b1cb-5257465b301f">
 2. 검색창에 STS 를 입력하여 해당 플러그인을 검색한다.
 3. 절차에 따라 플러그인을 설치한다.
+<img width="719" alt="image" src="https://github.com/user-attachments/assets/3b8e90e0-1de0-49a1-9a18-de59cc1fdf6b">
+
+
 
 설치 확인
 
@@ -67,6 +71,8 @@ cmd 창에서 [mvn -version] 명령어를 입력 시에, 메이븐의 버전에 
 
 톰캣 설치하기
 아파치 톰캣 공식 홈페이지 링크(톰캣 다운로드) : https://tomcat.apache.org/download-10.cgi
+<img width="794" alt="image" src="https://github.com/user-attachments/assets/7c8bcc35-18ad-49b4-8763-d45b505bb140">
+
 
 1. 개발환경에 맞춰 톰캣 설치파일을 다운로드 한다. Windows OS의 경우 64-bit Windows Service Installer를 다운로드 받는것이 편하다.
 2. 압축을 풀고, 설치 프로그램을 통해 설치할 수 있다. 톰캣은 Java를 이용하기 때문에, 미리 설치된 JRE의 경로를 지정해야 한다.
