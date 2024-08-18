@@ -32,11 +32,9 @@ STS 플러그인 설치하기
 3. 절차에 따라 플러그인을 설치한다.
 <img width="719" alt="image" src="https://github.com/user-attachments/assets/3b8e90e0-1de0-49a1-9a18-de59cc1fdf6b">
 
-
-
 설치 확인
-
-프로젝트 탐색기 우클릭 > New > Project... > Spring 검색 을 통해 Spring 관련 프로젝트 모델이 있음을 확인한다.
+
+프로젝트 탐색기 우클릭 > New > Project... > Spring 검색 을 통해 Spring 관련 프로젝트 모델이 있음을 확인한다.  
 (Spring Legacy Project > Spring MVC Project 모델로 프로젝트를 생성)
 
 -------------
