@@ -7,10 +7,8 @@ comments: true
 
 jQuery는 JavaScript처럼 대상 HTML elements에서 값을 읽어올 수도 있고, 반대로 값을 대입할 수도 있다.
 
--------------------
 
-
-Get Content - text(), html(), val()
+## Get Content - text(), html(), val()
 
 text() - 대상 elements 안의 텍스트만을 반환한다.
 ```javascript
@@ -33,7 +31,6 @@ $("#btn1").click(function(){
 });
 ```
 
-----------------
 
 Set Content - text(), html(), val()
 
@@ -72,9 +69,8 @@ $("button").click(function(){
 });
 ```
 
---------------------------
 
-Add Content 
+## Add Content
 
 append() - 해당 elements 안에서 가장 마지막에 내용을 추가
 ```javascript
@@ -96,9 +92,8 @@ before() - 해당 elements 바로 앞에 내용을 추가
 $("img").before("Some text before");
 ```
 
----------------------
 
-Remove Content
+## Remove Content
 
 remove() - selecter에 해당하는 태그를 페이지 내에서 삭제한다. action의 (  ) 에는 추가적인 필터를 작성할 수도 있다.
 ```javascript
