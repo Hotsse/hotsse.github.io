@@ -32,7 +32,7 @@ $("#btn1").click(function(){
 ```
 
 
-Set Content - text(), html(), val()
+## Set Content - text(), html(), val()
 
 Get Content의 반대 역할을 한다. ( ) 안의 내용이 비어 있으면 Get, 내용이 존재하면 해당 값으로 Set 이 된다.
 ```javascript
@@ -57,7 +57,8 @@ $("#btn1").click(function(){
 });
 ```
 
-Set Content - attr()
+
+## Set Content - attr()
 
 대상이 되는 elements의 속성(Attribute)도 수정할 수 있다.
 ```javascript
