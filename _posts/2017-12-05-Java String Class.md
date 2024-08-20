@@ -6,7 +6,7 @@ comments: true
 ---
 
 
-String <-> char
+## String <-> char
 
 ``` java
 // char to String
@@ -18,9 +18,8 @@ String str2 = "A";
 char c2 = str2.charAt(0);
 ```
 
-------------------
 
-String <-> char Array
+## String <-> char Array
 
 ``` java
 // String to char Array
@@ -31,9 +30,8 @@ char[] c_arr = str.toCharArray();
 String newStr = c_arr.toString();
 ```
 
-----------------
 
-String.split
+## String.split
 
 ``` java
 String str = "Hotsse~^~Developer~^~01012345678"
