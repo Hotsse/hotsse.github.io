@@ -11,7 +11,7 @@ AbstractRoutingDataSource는 Spring Framework에서 제공하는 동적 데이�
 
 ---------------
 
-# 주요 역할
+## 주요 역할
 1. 다수의 DataSource 관리
   - 하나의 애플리케이션에서 여러 DB 연결을 사용할 수 있도록 함 (예: Master/Slave 구조, 멀티 테넌시 등)
 2. 현재 컨텍스트에 맞는 DataSource 결정
@@ -21,13 +21,13 @@ AbstractRoutingDataSource는 Spring Framework에서 제공하는 동적 데이�
   - 그러나 실제 DB 연결은 현재 컨텍스트에 따라 선택된 데이터소스를 통해 이루어짐
 
 
-# 동작 흐름 요약
+## 동작 흐름 요약
 1. 여러 개의 DataSource 를 Map 형태로 등록 (targetDataSources)
 2. determineCurrentLookupKey() aㅔ서드가 호출되어 현재 컨텍스트의 키를 반환
 3. 그 키에 해당하는 DataSource 를 찾아서 실제 쿼리 수행 시 사용
 
 
-# 주로 사용되는 사례
+## 주로 사용되는 사례
 - 읽기/쓰기 분리
 - 멀티 테넌시
 - 샤딩/분산 DB 구성
@@ -35,7 +35,7 @@ AbstractRoutingDataSource는 Spring Framework에서 제공하는 동적 데이�
 
 ---------------
 
-# 예제 코드
+## 예제 코드
 아래는 그룹사의 그룹웨어 서비스의 입장에서 하나의 서비스가 각 법인마다 다른 DataSource 에 연결해야 하는 시나리오이다.
 
 각 요청 접근 시 Interceptor 에서 사용자 토큰에서 사용자의 소속 법인을 조회하여 ContextHolder 패턴을 통해 ThreadLocal 에 소속 법인 정보를 저장한다.
