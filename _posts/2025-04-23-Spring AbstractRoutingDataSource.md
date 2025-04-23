@@ -23,7 +23,7 @@ AbstractRoutingDataSource는 Spring Framework에서 제공하는 동적 데이�
 
 ## 동작 흐름 요약
 1. 여러 개의 DataSource 를 Map 형태로 등록 (targetDataSources)
-2. determineCurrentLookupKey() aㅔ서드가 호출되어 현재 컨텍스트의 키를 반환
+2. determineCurrentLookupKey() 메서드가 호출되어 현재 컨텍스트의 키를 반환
 3. 그 키에 해당하는 DataSource 를 찾아서 실제 쿼리 수행 시 사용
 
 
